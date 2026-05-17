@@ -1,3 +1,5 @@
+const API_BASE_URL = 'https://shl-assessment.duckdns.org';
+
 const chatMessages = document.getElementById('chat-messages');
 const chatForm = document.getElementById('chat-form');
 const userInput = document.getElementById('user-input');
@@ -9,7 +11,7 @@ let conversationHistory = [];
 
 async function checkHealth() {
     try {
-        const response = await fetch('/health');
+        const response = await fetch(`${API_BASE_URL}/health`);
         if (response.ok) {
             healthStatus.textContent = 'Backend Online';
             statusDot.classList.add('online');
@@ -116,7 +118,7 @@ chatForm.addEventListener('submit', async (e) => {
     showTyping();
     
     try {
-        const response = await fetch('/chat', {
+        const response = await fetch(`${API_BASE_URL}/chat`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
