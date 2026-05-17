@@ -11,4 +11,5 @@ httpx
 pytest
 pytest-asyncio
 langchain-core
+langchain-community
 langchain-classic
