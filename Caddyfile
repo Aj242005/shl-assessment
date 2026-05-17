@@ -1,4 +1,4 @@
 
-YOUR_DOMAIN.duckdns.org {
+shl-assessment.duckdns.org {
     reverse_proxy app:8000
 }
