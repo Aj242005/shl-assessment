@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+SHL_AI_Intern_Assignment.pdf
+GenAI_SampleConversations/
+.pytest_cache/
+pytest_output.txt
+*.egg-info/
+dist/
+build/
